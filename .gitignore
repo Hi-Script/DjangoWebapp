@@ -1,3 +1,5 @@
 .mypy_cache/
 /pyre/
 tmp
+# Ignore logs from simple_deploy.
+simple_deploy_logs/
