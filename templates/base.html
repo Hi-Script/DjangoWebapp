@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="twitter:url" content="https://www.mobytech.com.ng/en-ng">
+        <meta name="og:url" content="https://www.mobytech.com.ng/en-ng">
+        <meta name="twitter:title" content="Mobytech - Official Home Page">
+        <meta name="og:title" content="Mobytech - Official Home Page">
+        <meta name="twitter:description" content="Exlpore Mobytech products and services. Mobbytech brand is an all-in-one Technology platform for business.We unleash to millions of customer around the world to start and grow their business with our smart marketing strategies.">
+        
+        <meta name="og:description" content="Exlpore Mobytech products and services. Mobbytech brand is an all-in-one Technology platform for business.We unleash to millions of customer around the world to start and grow their business with our smart marketing strategies.">
+        <meta name="twitter:card" content="summary">
+        <meta name="og:type" content="website">
+
+        <link rel="SHORTCUT ICON" type="image/x-icon" href="{% static 'pictures/elogo (2).png' %}">
+
+
+        
+        <!-- title -->
+        <title>{% block title %}{% endblock title %}</title>
+        <!-- css and js linking -->
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/sec.css' %}">
+	
+    </head>
+
+    <body>
+        {% include "nav.html" %}
+       {% block content %}
+       
+       {% endblock content %}
+
+
+       
+       <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
+       <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        
+    </body>
+</html>

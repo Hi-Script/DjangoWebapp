@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    
+</head>
+<body>
+    
+    <div class="container">
+       <div class="row">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <nav class="navbar navbar-expand-md navbar-dark  mb-4 fixed-top " id="navbar" style=" padding: 0px;">
+                        <div class="container-fluid" style="height: 60px; " id="config"  >
+
+                            
+                            
+
+                          
+                            <a class="navbar-brand" href="{% url 'home' %}" >
+                                <img src=" {% static 'pictures/rlogo.png' %}" width="170" height="70" style="margin-left: -35px; " class="logos" >
+
+
+                                
+                                
+                                <span itemprop="name" role="presentation" aria-hidden="true" 
+                                style="overflow-x: visible; margin-left: -98px;" class="word">
+                                <img src=" {% static 'pictures/lg (3).png' %}" width="150" height="105"></span>
+                                
+                            </a>
+                            
+                        
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon" id="toggle"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-md-0" id="nav-header">
+
+                                    <li class="nav-item" id="nav-son">
+                                        <a class="nav-link active" id="nav-child" aria-current="page" href="{% url 'home' %}" style=" color: rgba(255, 255, 255, 0.7);
+                                        font-family: Arial; font-style: normal; font-size: 10px;
+                                        ">
+                                        Home</a>
+                                        </li>
+                                    <li class="nav-item dropdown" id="nav-son">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" 
+                                        data-bs-toggle="dropdown" aria-expanded="false" 
+                                        style=" color: rgba(255, 255, 255, 0.7); font-family: Arial; font-style: normal; font-size: 10px; margin-left: -15px; 
+                                        ">Departments</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                    <li><a class="dropdown-item" href="#" target="_blank" style=" font-style: inherit; font-size: xx-small;" >Web programming</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank" style=" font-style: inherit; font-size: xx-small;" >Ecommerce Store</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank" style=" font-style: inherit; font-size: xx-small;" >Human Relation</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank" style=" font-style: inherit; font-size: xx-small;" >Engineering</a></li>
+                                    </ul>
+                                    </li>
+                                    
+                                    <li class="nav-item dropdown" id="nav-son">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" 
+                                        data-bs-toggle="dropdown" aria-expanded="false" 
+                                        style=" color: rgba(255, 255, 255, 0.7);
+                                        font-family: Arial; font-style: normal; font-size: 10px;
+                                        ">Values</a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                        <li><a class="dropdown-item" href="#" target="_blank" style=" font-style: inherit; font-size: xx-small;">People</a></li>
+                                        <li><a class="dropdown-item" href="#"  target="_blank" style=" font-style: inherit; font-size: xx-small;">HiScript Foundation</a></li>
+                                        <li><a class="dropdown-item" href="#"  target="_blank" style=" font-style: inherit; font-size: xx-small;">Courses</a></li>
+                                        <li><a class="dropdown-item" href="#"  target="_blank" style=" font-style: inherit; font-size: xx-small;">Consultation</a></li>
+                                        </ul>
+                                        </li>
+                                    <li class="nav-item" id="nav-son">
+                                    <a class="nav-link" href="#" target="_blank" style=" color: rgba(255, 255, 255, 0.7);
+                                    font-family: Arial; font-style: normal; font-size: 10px;
+                                    ">About us</a>
+                                    </li>
+                                    
+                                    <li id="nav-son"><button type="button" class="btn-c" onclick = "detail()"><a href="#">Contact us</a></button></li>
+
+
+
+                                    <li id="nav-son"><footer class="foot" style="color: white
+                                    ;">HiScript(C)2022</footer></li>
+
+
+                                    
+                                    
+                                
+                                </ul>
+                                        
+                            
+                            </div>
+
+                        </div>    
+                                
+                        
+                                    
+                        
+                            
+                        
+                    </nav>
+                </div>
+            </div>
+   
+        </div>
+    </div>    
+
+    
+
+    
+</body>
+</html>
+
