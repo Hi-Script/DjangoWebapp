@@ -1,13 +1,7 @@
-from ctypes import resize
-from distutils.command.upload import upload
-import email
-from email.policy import default
+
 from pickle import TRUE
-from statistics import mode
-from turtle import title, update
 from django.db import models
-from django.contrib.auth.models import User
-from PIL import Image
+
 
 
 # Create your models here.
