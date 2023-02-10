@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Official Homepage of HiScript{%endblock title %}
+
+
+
+{% block content %}
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+    <link rel="stylesheet" type="text/css" href="doc.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="conctact-form.js"></script>
+</head>-->
+
+    <div class="container" style="margin-top:100px; margin-bottom: 50px">
+
+        <div class="row">
+    
+    
+    
+     
+            <div class="col-md-12" style="background-image: url( {% static 'pictures/nasa.jpg' %});">
+            
+                <div class="container-fluid-py-5 " style="margin-top: 50px;">
+                    
+                    
+                    <p class="col-md-8 fs-4" style="margin-top: 340px; color: aliceblue;">
+                    <h1 class="display-5 fw-bold"
+                    style=" color: rgb(208, 245, 2); font-size: 20px;">Beyond Reasonable Doubts... </h1>
+                    <span style= " color: rgb(254, 255, 250); font-size: smaller;"> Our mission is to empower every person and every 
+                    organization on the planet to achieve more.</span></p>
+                </div>
+            </div>    
+                  
+            
+        </div>	
+    </div>
+
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-md-6 themed-grid-col text-center">
+                <img src="{% static 'pictures/austin.jpg' %}" width="300" height="300"
+                style="margin-top: 100px;">
+
+            </div>
+
+            <div class="col-md-6 themed-grid-col text-center">
+                <img src="{% static 'pictures/manaj.jpg' %}" width="300" height="300"
+                style="margin-top: 100px;">
+            </div>
+        </div>
+    </div>
+    
+    <div class="a-example-divider"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 themed-grid-col">
+                <h4 style=" color: rgb(208, 245, 2);">Our company</h4>
+                <p style="color: rgb(254, 255, 250); font-size: smaller; ">Stay informed about HiScript – from company facts and news
+                        to our worldwide locations and more,Virtually
+                    everythings</p>
+            </div>
+            <div class="col-sm-3 themed-grid-col" ><h4 style=" color: rgb(208, 245, 2);">Who we are</h4>
+                <p style="color: rgb(254, 255, 250); font-size: smaller;">HiScript is an all-in-one Technology platform for humanity.
+                    Our services target every living being.</p>
+            </div>
+            <div class="col-sm-3 themed-grid-col" ><h4 style=" color: rgb(208, 245, 2);">What we value</h4>
+                <p style="color: rgb(254, 255, 250); font-size: smaller;">Virtually humanity at large,thats why our services 
+                    target both reach and poor,young and old,white and black.
+                </div>
+            <div class="col-sm-3 themed-grid-col" ><h4 style=" color: rgb(208, 245, 2);">Contact us</h4>
+                <p style="color: rgb(254, 255, 250); font-size: smaller;">Get in touch. We’re here to help.
+                    </p>
+                
+                
+                <button type="button" class="btn btn-primary"><a href="https://wa.link/xcfhoj"style="color: rgb(254, 255, 250)">Contact us<a></button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="a-example-divider"></div>
+
+    
+            
+        
+            
+
+
+    
+    <div class="a-example-divider"></div>
+    <footer id="b-example-divider" class=" text-center">
+        <center><footer><p class="mt-5 mb-3 text-muted">HiScript&copy; 2022–2023</p></footer></center>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;">Privacy</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;">Terms</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;">Support</a></li>
+        </ul>
+    </footer>
+
+
+{% endblock content %}

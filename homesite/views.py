@@ -11,6 +11,10 @@ def index(request):
     return render(request, 'index.html', context )
 
 
+def Aboutpage(request):
+    context = {}
+    return render(request, 'about.html', context)
+
 def Reviewpage(request):
 
     context={}

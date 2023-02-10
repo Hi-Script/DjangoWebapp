@@ -18,20 +18,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
 
+import environ
+
+env = environ.Env()
+
+environ.Env.read_env()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'django-insecure-4(&l53j7*l3nm*ab9%*7a^q416@$dj@%n2gnlemk)5%zg!3*11'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost', 'hiscript.fly.dev']
-CSRF_TRUSTED_ORIGINS = ['https://hiscript.fly.dev']
+ALLOWED_HOSTS = ['*']
+#CSRF_TRUSTED_ORIGINS = ['https://hiscript.fly.dev']
 
 
 # Application definition
@@ -50,7 +55,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    #"whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -86,9 +91,7 @@ WSGI_APPLICATION = 'hiscript.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config (
-        default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-    )
+    'default': dj_database_url.parse(os.getenv('DATABASE_URL'))
 }
 
 
@@ -126,17 +129,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_DIRS =[BASE_DIR / 'static']
-STATICFILES_DIRS =(
-    os.path.join(BASE_DIR, 'static'),
-)
+#STATIC_URL = 'static/'
+#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+#STATIC_ROOT = BASE_DIR / "staticfiles"
+#STATICFILES_DIRS =[BASE_DIR / 'static']
+#STATICFILES_DIRS =(
+ #   os.path.join(BASE_DIR, 'static'),
+#)
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_URL = 'media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
@@ -147,24 +150,24 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-#AWS_LOCATION = 'static'
-#AWS_ACCESS_KEY_ID ='' 
-#AWS_SECRET_ACCESS_KEY = ''
-#AWS_STORAGE_BUCKET_NAME =''
-#AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-#AWS_S3_OBJECT_PARAMETERS = { 'CacheControl': 'max-age=86400'}
-#AWS_QUERYSTRING_AUTH = False
-#DEFAULT_FILE_STORAGE = 'hiscript.storage_backends.MediaStore'
-#STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-#STATICFILES_DIRS = [
- #   os.path.join(BASE_DIR, 'static'),
-#] 
-#STATIC_URL='https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+AWS_LOCATION = 'static'
+AWS_ACCESS_KEY_ID =os.getenv('AWS_ACCESS_KEY_ID') 
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME ='mysitehome'
+AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = { 'CacheControl': 'max-age=86400'}
+AWS_QUERYSTRING_AUTH = False
+DEFAULT_FILE_STORAGE = 'hiscript.storage_backends.MediaStore'
+STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, 'static'),
+] 
+STATIC_URL='https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 
-#AWS_DEFAULT_ACL = 'public-read'
+AWS_DEFAULT_ACL = 'public-read'
 
-#MEDIA_URL =  'media/'
-#MEDIAFILES_LOCATION = 'media'
-#MEDIA_ROOT = '/%s/' % MEDIAFILES_LOCATION
-#MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL =  'media/'
+MEDIAFILES_LOCATION = 'media'
+MEDIA_ROOT = '/%s/' % MEDIAFILES_LOCATION
+MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
