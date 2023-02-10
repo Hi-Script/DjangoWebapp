@@ -11,4 +11,4 @@ gunicorn==20.1.0
 tzdata==2022.4
 python-dotenv==0.21.0
 psycopg2-binary==2.9.5
-dj-database-url==1.0.0਍橤湡潧猭浩汰ⵥ敤汰祯†††††‣摁敤⁤祢猠浩汰彥敤汰祯挠浯慭摮.
+dj-database-url==1.2.0
