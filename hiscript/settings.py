@@ -30,9 +30,10 @@ SECRET_KEY = 'django-insecure-4(&l53j7*l3nm*ab9%*7a^q416@$dj@%n2gnlemk)5%zg!3*11
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-
-ALLOWED_HOSTS = ['*']
-#CSRF_TRUSTED_ORIGINS = ['https://hiscript.fly.dev']
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "realhiscript.fly.dev"]
+#CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS')
+#ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://realhiscript.fly.dev']
 
 
 # Application definition
@@ -84,12 +85,28 @@ WSGI_APPLICATION = 'hiscript.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'))
+}'''
+
+#DATABASES = {
+ #   'default': dj_database_url.parse(os.getenv('DATABASE_URL', default="sqlite:///db.sqlite3"))
+#}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
-
-
+'''
+DATABASES = {
+    "default": dj_database_url.config(
+        default="sqlite:///" + os.path.join(BASE_DIR, "db.sqlite3")
+    )
+}
+'''
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -144,6 +161,9 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#USE_S3 = os.getenv('USE_S3') == 'TRUE'
+
+
 
 AWS_LOCATION = 'static'
 AWS_ACCESS_KEY_ID =os.getenv('AWS_ACCESS_KEY_ID') 
@@ -153,9 +173,9 @@ AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = { 'CacheControl': 'max-age=86400'}
 AWS_QUERYSTRING_AUTH = False
 DEFAULT_FILE_STORAGE = 'hiscript.storage_backends.MediaStore'
-STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, 'static'),
+os.path.join(BASE_DIR, 'static'),
 ] 
 STATIC_URL='https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 
@@ -166,3 +186,19 @@ MEDIAFILES_LOCATION = 'media'
 MEDIA_ROOT = '/%s/' % MEDIAFILES_LOCATION
 MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+'''
+else:
+    STATIC_URL = '/static/'
+    PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+    STATIC_ROOT  = os.path.join(PROJECT_ROOT, 'staticfiles')
+    
+
+    MEDIA_URL = 'media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#STATICFILES_DIRS =[BASE_DIR / 'static']
+    STATICFILES_DIRS =(
+        os.path.join(BASE_DIR, 'static'),
+    )
+#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+'''

@@ -27,11 +27,11 @@
         <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/sec.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/doc.css' %}">
+        
 	
     </head>
 
-    <body>
+    <body style="background-image: url( {% static 'pictures/LandingPage.png' %});">
         {% include "nav.html" %}
        {% block content %}
        

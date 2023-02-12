@@ -1,0 +1,83 @@
+   #uew{background-color: orangered; width: 300px; height: 400px; margin-left: 7px; margin-top: 7px;}
+    .all{display: flex;}
+    #navcol{background-image: url('pictures/lap.jpg');
+        background-size: 100% 100%; height: 500px; margin-bottom: 10px; margin-top:-20px; }
+        #navc{background-image: url('static/pictures/nasa.jpg');
+            background-size: 100% 100%; height: 500px; margin-bottom: 10px; margin-top:-20px; }
+            #navco{background-image: url('pictures/mom.jpg');
+                background-size: 100% 100%;  
+                height: 500px; margin-bottom: 10px; margin-top:-20px; }
+                #navcoll{background-image: url('pictures/lon\ \(3\).jpg');
+                    background-size: 100% 100%;  
+                    font-size: small;
+                    height: 500px; margin-bottom: 10px; margin-top:-20px; }
+                   #button{height: 2px;}
+                    #navcon{background-image: url('pictures/meng\ \(7\).jpg');
+                        background-size: 100% 100%;  
+                        height: 500px; margin-bottom: 10px; margin-top:-20px; }
+                        #navcok{background-image: url('pictures/lon\ \(2\).jpg');
+                            background-size: 100% 100%;  
+                            height: 500px; margin-bottom: 10px; margin-top:-20px; }
+                       
+                   
+    .navbar-brand{font-family: serif; letter-spacing: 3px; }
+    .nav-collapse{align-items: left;}
+    .nav-item{text-align: left; text-decoration: none; font-size: x-small; margin-left: 100px;
+         padding: 4px; background-color: rgba(253, 249, 249, 0.979)}
+    .social{}
+    .nav-link{ color: black;}
+    #project{width: 400px; background-image: url('pictures/lap.jpg'); 
+        background-size:100% 100% ; opacity: 0.4px;
+        color: white;}
+    #box{width: 400px;} 
+    #submit{width: 400px;}   
+    #hoj{border-style: groove; border-radius: 20%; width: 370px; height: 400px; 
+        margin-top: 40px;}
+    #joj{background-color: rgba(248, 245, 245, 0.986);
+        border: solid rgb(245, 245, 245);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .sectionA{background-color: rgba(252, 252, 252, 0.938);
+        border: solid rgb(245, 245, 245);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), 
+        inset 0 .125em .5em rgba(0, 0, 0, .15); padding: 20px;
+      }
+    
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+      
+      .a-example-divider {
+        height: 2rem;
+        background-color: rgba(252, 252, 252, 0.938);
+        border: solid rgb(245, 245, 245);
+         }
+         #button{
+            height: 3rem;
+  
+         }
+      
+    #naxu{   border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+   
+
+    }
+
+    .container-fluid{
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+   
+    }
+
+    #c-example-divider{
+      margin-top: 150px;
+    }
