@@ -33,7 +33,7 @@ DEBUG = False
 ALLOWED_HOSTS = [ '*']
 #CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS')
 #ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://hi-script.fly.dev']
+CSRF_TRUSTED_ORIGINS = ['*']
 
 
 # Application definition
