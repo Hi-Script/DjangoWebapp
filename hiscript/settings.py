@@ -33,7 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = [ '*']
 #CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS')
 #ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://hiscript-hy68.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://hiscript-5faj.onrender.com']
 
 
 # Application definition
