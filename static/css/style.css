@@ -20,6 +20,12 @@ body {
     margin: 0;
 }
 
+#stick {
+    background-color: orangered;
+}
+
+article.a
+
 .form-signin input {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
@@ -74,7 +80,7 @@ nav.scrolled{
     transform: translateY(-40px);
     background-image: url('../pictures/LandingPage.png');
     background-color: aliceblue;
-    
+    align-items: center;
     
     
 }

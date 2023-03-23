@@ -20,3 +20,29 @@ window.addEventListener("scroll", () => {
 function detail() {
     alert("coming soon, thank you")
 }
+
+// validation of contact form
+
+// create a function to handle the validation
+(function(){
+    // use stirct to place restriction
+    'use strict'
+
+    // fetch the form from HTML page and store it in the variable form
+    var forms = document.querySelectorAll(".needs-validation")
+
+    // call the stored form using(Array.protptype.slice.call)
+    Array.prototype.slice.call(forms)
+
+    // loop over the form and prevent submission
+    .forEach(function(form) {
+        form.addEventListener('submit', function(event){
+            if(!form.checkValidity()){
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+        },false)
+        
+    });
+})();

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static%}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+    <main class="form-signin">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% if message %}
+            <h2>{{ message }}</h2>
+            {% endif %}
+
+            <!--<img class="mb-4" src="" alt="" width="72" height="57">-->
+            <h1 class="h3 mb-3 fw-normal text-center">Create Feature Post And Send To Admin</h1><br>
+
+            <div class="form-floating">
+
+                <input type="text"  id="floatingInput" placeholder="Title" name= 'f-title' required>
+        
+            </div><br>
+
+            <div class="form-group"> <label for="name">Select Category</label> 
+                <select class="form-control" name="categories"> 
+                    <option>World</option> 
+                    <option>Technology</option> 
+                    <option>Programming</option> 
+                    <option>Business</option> 
+                    <option>News</option>
+                    <option>Culture</option>
+                    <option>Entertainment</option>
+                    <option>Education</option> 
+                    <option>Sports</option>
+                </select>   
+            </div><br>
+
+            <div class="form-floating">
+
+                <textarea  cols="40" rows="4"  placeholder="Description::first paragraph from your post" name= 'fe-description' required></textarea>
+        
+            </div><br>
+
+            <div class="form-floating">
+                <textarea name="f-description"  cols="40" rows="8" placeholder="Body content of your post" required></textarea><br>
+                
+
+
+            </div>
+            <div class= "pics">
+                <label>Upload image</label>
+                <input type="file" name ="f-image" class="form-control-file">
+            </div><br>
+            
+            <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="" id="create">Create Feature Post</button>
+            <p class="mt-5 mb-3 text-muted text-center">HiScript&copy; 2022–2023</p>
+        </form>
+</main>
+
+<script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
+
+{% endblock content %}

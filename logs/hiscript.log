@@ -1,0 +1,334 @@
+INFO Watching for file changes with StatReloader
+INFO "GET /contact/ HTTP/1.1" 200 12979
+INFO "GET / HTTP/1.1" 200 31776
+INFO C:\Users\hp250\Desktop\myhomepage\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 09:30:24,959 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 09:30:41,504 basehttp "GET / HTTP/1.1" 200 31778
+INFO2023-03-07 09:31:18,221 basehttp "GET /review/ HTTP/1.1" 200 10526
+INFO2023-03-07 09:32:15,555 basehttp "GET / HTTP/1.1" 200 31778
+INFO2023-03-07 09:33:55,134 autoreload C:\Users\hp250\Desktop\myhomepage\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 09:34:02,453 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 09:34:05,563 basehttp "GET / HTTP/1.1" 200 30308
+INFO2023-03-07 09:34:06,587 basehttp "GET /static/css/sec.css HTTP/1.1" 200 603
+INFO2023-03-07 09:34:06,685 basehttp "GET /static/pictures/logo.png HTTP/1.1" 200 14116
+INFO2023-03-07 09:34:06,701 basehttp "GET /static/pictures/arrow-right-up.png HTTP/1.1" 200 233
+INFO2023-03-07 09:34:06,786 basehttp "GET /static/css/style.css HTTP/1.1" 200 42705
+INFO2023-03-07 09:34:06,842 basehttp "GET /static/pictures/Rectangle%20900.png HTTP/1.1" 200 5469
+INFO2023-03-07 09:34:06,866 basehttp "GET /static/pictures/lg%20(3).png HTTP/1.1" 200 68656
+INFO2023-03-07 09:34:06,906 basehttp "GET /static/pictures/plus%20i.png HTTP/1.1" 200 347
+INFO2023-03-07 09:34:06,946 basehttp "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 155845
+INFO2023-03-07 09:34:06,946 basehttp "GET /static/pictures/Group%20zero.png HTTP/1.1" 200 1582
+INFO2023-03-07 09:34:06,954 basehttp "GET /static/pictures/Group%20angle.png HTTP/1.1" 200 2005
+INFO2023-03-07 09:34:06,962 basehttp "GET /static/pictures/Icon7.png HTTP/1.1" 200 632
+INFO2023-03-07 09:34:07,289 basehttp "GET /static/pictures/Icon6.png HTTP/1.1" 200 2182
+INFO2023-03-07 09:34:07,289 basehttp "GET /static/pictures/Icon5.png HTTP/1.1" 200 2086
+INFO2023-03-07 09:34:07,297 basehttp "GET /static/pictures/Icon4.png HTTP/1.1" 200 2129
+INFO2023-03-07 09:34:07,361 basehttp "GET /static/pictures/doval.png HTTP/1.1" 200 1582
+INFO2023-03-07 09:34:07,753 basehttp "GET /static/pictures/JOK%20(2).png HTTP/1.1" 200 905472
+INFO2023-03-07 09:34:07,985 basehttp "GET /static/javascript/main.js HTTP/1.1" 200 470
+INFO2023-03-07 09:34:08,137 basehttp "GET /static/pictures/SOK.png HTTP/1.1" 200 1064782
+INFO2023-03-07 09:34:08,297 basehttp "GET /static/pictures/JOK%20(4).png HTTP/1.1" 200 852875
+INFO2023-03-07 09:34:08,297 basehttp "GET /static/pictures/JOK%20(3).png HTTP/1.1" 200 1703036
+INFO2023-03-07 09:34:08,313 basehttp "GET /static/pictures/JOK%20(5).png HTTP/1.1" 200 824999
+INFO2023-03-07 09:34:08,345 basehttp "GET /static/pictures/JOK%20(6).png HTTP/1.1" 200 1522586
+INFO2023-03-07 09:34:08,481 basehttp "GET /static/pictures/DOK%20(2).png HTTP/1.1" 200 1363929
+INFO2023-03-07 09:34:08,521 basehttp "GET /static/pictures/DOK%20(5).png HTTP/1.1" 200 1325679
+INFO2023-03-07 09:34:08,889 basehttp "GET /static/pictures/Group%20man%2045.png HTTP/1.1" 200 350103
+INFO2023-03-07 09:34:09,225 basehttp "GET /media/images/DOK_2.png HTTP/1.1" 200 1363929
+INFO2023-03-07 09:34:09,377 basehttp "GET /media/images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg HTTP/1.1" 200 2013105
+INFO2023-03-07 09:34:09,441 basehttp "GET /media/feature/jonatan-pie-3l3RwQdHRHg-unsplash.jpg HTTP/1.1" 200 1723692
+INFO2023-03-07 09:34:09,537 basehttp "GET /media/feature/image_4.png HTTP/1.1" 200 963075
+INFO2023-03-07 09:34:09,593 basehttp "GET /static/pictures/facebook.png HTTP/1.1" 200 495
+INFO2023-03-07 09:34:09,633 basehttp "GET /media/feature/elogo_2.png HTTP/1.1" 200 30487
+INFO2023-03-07 09:34:09,641 basehttp "GET /static/pictures/whatsapp.png HTTP/1.1" 200 519
+INFO2023-03-07 09:34:09,649 basehttp "GET /static/pictures/twitter.png HTTP/1.1" 200 471
+INFO2023-03-07 09:34:09,657 basehttp "GET /static/pictures/linkedin.png HTTP/1.1" 200 466
+INFO2023-03-07 09:34:09,729 basehttp "GET /media/images/col_4_t7KWOlS.jpg HTTP/1.1" 200 966060
+INFO2023-03-07 09:34:10,179 basehttp "GET /static/pictures/LandingPage.png HTTP/1.1" 200 2508644
+INFO2023-03-07 09:34:10,523 basehttp "GET /media/images/austin_VcQUGke.jpg HTTP/1.1" 200 5939031
+INFO2023-03-07 09:34:10,699 basehttp "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60089
+INFO2023-03-07 09:34:45,866 basehttp "GET /about/ HTTP/1.1" 200 15431
+INFO2023-03-07 09:34:46,210 basehttp "GET /static/pictures/placeholder.png HTTP/1.1" 200 25766
+INFO2023-03-07 09:34:46,250 basehttp "GET /static/pictures/comn.jpg HTTP/1.1" 200 1643785
+INFO2023-03-07 09:34:46,291 basehttp "GET /static/pictures/manaj.jpg HTTP/1.1" 200 2676521
+INFO2023-03-07 09:34:46,683 basehttp "GET /static/pictures/hope.jpg HTTP/1.1" 200 1315333
+INFO2023-03-07 09:34:46,763 basehttp "GET /static/pictures/hand.jpg HTTP/1.1" 200 2163234
+INFO2023-03-07 09:35:46,899 basehttp "GET / HTTP/1.1" 200 30308
+INFO2023-03-07 09:36:45,311 basehttp "GET / HTTP/1.1" 200 30347
+INFO2023-03-07 09:36:51,142 basehttp "GET / HTTP/1.1" 200 30347
+INFO2023-03-07 09:37:15,026 basehttp "GET / HTTP/1.1" 200 30347
+INFO2023-03-07 09:38:44,225 basehttp "GET / HTTP/1.1" 200 30401
+INFO2023-03-07 09:39:20,436 basehttp "GET / HTTP/1.1" 200 30422
+INFO2023-03-07 09:41:25,282 basehttp "GET /sucess HTTP/1.1" 301 0
+INFO2023-03-07 09:41:26,751 basehttp "GET /sucess/ HTTP/1.1" 200 11513
+INFO2023-03-07 09:42:06,282 basehttp "GET /sucess/ HTTP/1.1" 200 11513
+INFO2023-03-07 09:42:13,175 basehttp "GET / HTTP/1.1" 200 30422
+INFO2023-03-07 09:42:36,788 basehttp "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 431289
+INFO2023-03-07 09:43:32,645 basehttp "GET /about/ HTTP/1.1" 200 15431
+INFO2023-03-07 09:43:33,005 basehttp "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 431289
+INFO2023-03-07 09:44:17,689 basehttp "GET / HTTP/1.1" 200 30422
+INFO2023-03-07 09:44:17,921 basehttp "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 431289
+INFO2023-03-07 09:45:41,651 basehttp "GET / HTTP/1.1" 200 30538
+INFO2023-03-07 09:45:42,499 basehttp "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 431289
+INFO2023-03-07 09:46:40,190 basehttp "GET / HTTP/1.1" 200 30622
+INFO2023-03-07 09:46:40,582 basehttp "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 431289
+INFO2023-03-07 09:47:55,485 basehttp "GET / HTTP/1.1" 200 30648
+INFO2023-03-07 09:47:55,773 basehttp "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 431289
+INFO2023-03-07 09:49:36,129 basehttp "GET /admin HTTP/1.1" 301 0
+INFO2023-03-07 09:49:38,906 basehttp "GET /admin/ HTTP/1.1" 200 8224
+INFO2023-03-07 09:49:39,220 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+INFO2023-03-07 09:49:39,236 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO2023-03-07 09:49:39,316 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+INFO2023-03-07 09:49:39,324 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO2023-03-07 09:49:39,428 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO2023-03-07 09:49:39,492 basehttp "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO2023-03-07 09:49:40,405 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO2023-03-07 09:49:40,437 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO2023-03-07 09:49:40,541 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO2023-03-07 09:49:41,037 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO2023-03-07 09:49:41,833 basehttp "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO2023-03-07 09:49:41,865 basehttp "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO2023-03-07 09:49:41,873 basehttp "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+WARNING2023-03-07 09:49:43,512 log Not Found: /favicon.ico
+WARNING2023-03-07 09:49:43,512 basehttp "GET /favicon.ico HTTP/1.1" 404 3800
+INFO2023-03-07 09:49:52,457 basehttp "GET /admin/homesite/review/ HTTP/1.1" 200 8113
+INFO2023-03-07 09:49:52,689 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO2023-03-07 09:49:52,832 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+INFO2023-03-07 09:49:52,856 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO2023-03-07 09:49:53,322 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO2023-03-07 09:49:53,402 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO2023-03-07 09:49:53,515 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO2023-03-07 09:49:53,660 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO2023-03-07 09:49:53,844 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO2023-03-07 09:49:54,590 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO2023-03-07 09:49:54,683 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO2023-03-07 09:49:54,739 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+INFO2023-03-07 09:49:54,876 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO2023-03-07 09:50:28,756 basehttp "POST /admin/homesite/review/ HTTP/1.1" 200 6672
+INFO2023-03-07 09:50:29,036 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO2023-03-07 09:50:31,231 basehttp "POST /admin/homesite/review/ HTTP/1.1" 302 0
+INFO2023-03-07 09:50:31,439 basehttp "GET /admin/homesite/review/ HTTP/1.1" 200 7592
+INFO2023-03-07 09:50:31,495 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO2023-03-07 09:50:31,599 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO2023-03-07 09:50:38,148 basehttp "GET / HTTP/1.1" 200 26697
+INFO2023-03-07 10:01:09,181 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 10:01:25,641 basehttp "GET / HTTP/1.1" 200 26697
+INFO2023-03-07 10:01:46,087 basehttp "GET /about/ HTTP/1.1" 200 15431
+INFO2023-03-07 10:01:52,835 basehttp "GET / HTTP/1.1" 200 26697
+INFO2023-03-07 10:02:05,664 basehttp "GET /review/ HTTP/1.1" 200 10211
+INFO2023-03-07 10:03:01,301 basehttp "POST /review/ HTTP/1.1" 302 0
+INFO2023-03-07 10:03:01,373 basehttp "GET / HTTP/1.1" 200 27910
+INFO2023-03-07 10:03:01,869 basehttp "GET /media/images/campbell-3ZUsNJhi_Ik-unsplash.jpg HTTP/1.1" 200 1200870
+INFO2023-03-07 10:05:04,578 autoreload C:\Users\hp250\Desktop\myhomepage\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 10:05:06,197 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 10:06:09,018 autoreload C:\Users\hp250\Desktop\myhomepage\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 10:06:10,694 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 10:06:54,654 autoreload C:\Users\hp250\Desktop\myhomepage\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 10:06:56,325 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 10:07:24,210 autoreload C:\Users\hp250\Desktop\myhomepage\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 10:07:26,196 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 22:39:39,937 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 22:55:52,379 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 22:56:54,752 basehttp "GET / HTTP/1.1" 200 29312
+INFO2023-03-07 22:59:38,567 basehttp "GET /about/ HTTP/1.1" 200 16061
+INFO2023-03-07 23:08:11,085 basehttp "GET /about/ HTTP/1.1" 200 16061
+INFO2023-03-07 23:10:29,659 basehttp "GET /about/ HTTP/1.1" 200 16061
+INFO2023-03-07 23:10:55,927 basehttp "GET /contact/ HTTP/1.1" 200 12979
+INFO2023-03-07 23:10:55,910 basehttp - Broken pipe from ('127.0.0.1', 52348)
+ERROR2023-03-07 23:12:06,380 log Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hp250\myhiscript\hiscript\homesite\views.py", line 78, in ContactPage
+    connection.open()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR2023-03-07 23:12:06,385 basehttp "POST /contact/ HTTP/1.1" 500 101931
+WARNING2023-03-07 23:12:08,245 log Not Found: /favicon.ico
+WARNING2023-03-07 23:12:08,245 basehttp "GET /favicon.ico HTTP/1.1" 404 3453
+ERROR2023-03-07 23:13:07,046 log Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hp250\myhiscript\hiscript\homesite\views.py", line 78, in ContactPage
+    connection.open()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR2023-03-07 23:13:07,049 basehttp "POST /contact/ HTTP/1.1" 500 101931
+INFO2023-03-07 23:14:37,162 basehttp "GET / HTTP/1.1" 200 29312
+INFO2023-03-07 23:14:37,162 basehttp - Broken pipe from ('127.0.0.1', 52559)
+INFO2023-03-07 23:15:38,518 autoreload C:\Users\hp250\myhiscript\hiscript\homesite\views.py changed, reloading.
+INFO2023-03-07 23:17:21,593 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 23:20:15,201 basehttp "GET / HTTP/1.1" 200 29312
+INFO2023-03-07 23:23:06,221 basehttp "GET /contact/ HTTP/1.1" 200 12979
+ERROR2023-03-07 23:24:14,270 log Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hp250\myhiscript\hiscript\homesite\views.py", line 78, in ContactPage
+    connection.open()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR2023-03-07 23:24:14,276 basehttp "POST /contact/ HTTP/1.1" 500 101681
+WARNING2023-03-07 23:24:17,030 log Not Found: /favicon.ico
+WARNING2023-03-07 23:24:17,030 basehttp "GET /favicon.ico HTTP/1.1" 404 3453
+ERROR2023-03-07 23:29:38,763 log Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hp250\myhiscript\hiscript\homesite\views.py", line 78, in ContactPage
+    connection.open()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR2023-03-07 23:29:38,766 basehttp "POST /contact/ HTTP/1.1" 500 101689
+INFO2023-03-07 23:35:10,558 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 23:37:15,166 basehttp "GET / HTTP/1.1" 200 29312
+INFO2023-03-07 23:37:42,321 basehttp "GET /contact/ HTTP/1.1" 200 12979
+ERROR2023-03-07 23:38:20,954 log Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hp250\myhiscript\hiscript\homesite\views.py", line 78, in ContactPage
+    connection.open()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR2023-03-07 23:38:20,958 basehttp "POST /contact/ HTTP/1.1" 500 101881
+INFO2023-03-07 23:39:49,697 autoreload C:\Users\hp250\myhiscript\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 23:40:38,109 autoreload Watching for file changes with StatReloader
+ERROR2023-03-07 23:41:23,913 log Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hp250\myhiscript\hiscript\homesite\views.py", line 78, in ContactPage
+    connection.open()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+ERROR2023-03-07 23:41:23,917 basehttp "POST /contact/ HTTP/1.1" 500 89641
+INFO2023-03-07 23:44:13,759 autoreload C:\Users\hp250\myhiscript\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-07 23:44:21,324 autoreload Watching for file changes with StatReloader
+INFO2023-03-07 23:45:06,207 basehttp "GET / HTTP/1.1" 200 29312
+INFO2023-03-07 23:45:24,445 basehttp "GET /contact/ HTTP/1.1" 200 12979
+ERROR2023-03-07 23:46:12,132 log Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\hp250\myhiscript\hiscript\homesite\views.py", line 78, in ContactPage
+    connection.open()
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\hp250\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR2023-03-07 23:46:12,137 basehttp "POST /contact/ HTTP/1.1" 500 101662
+INFO2023-03-07 23:49:11,306 autoreload C:\Users\hp250\myhiscript\hiscript\hiscript\settings.py changed, reloading.
+INFO2023-03-08 00:47:12,064 autoreload Watching for file changes with StatReloader
+INFO2023-03-08 00:48:50,563 basehttp "GET / HTTP/1.1" 200 29312
+INFO2023-03-08 00:50:16,802 basehttp "GET /contact/ HTTP/1.1" 200 12979
+INFO2023-03-08 00:51:08,020 basehttp "POST /contact/ HTTP/1.1" 302 0
+INFO2023-03-08 00:51:08,036 basehttp "GET /contact/ HTTP/1.1" 200 12979
+INFO2023-03-08 00:53:16,866 basehttp "POST /contact/ HTTP/1.1" 302 0
+INFO2023-03-08 00:53:16,882 basehttp "GET /contact/ HTTP/1.1" 200 12979
+INFO2023-03-08 00:53:38,889 autoreload C:\Users\hp250\myhiscript\hiscript\homesite\views.py changed, reloading.
+INFO2023-03-08 00:54:00,048 autoreload Watching for file changes with StatReloader
+INFO2023-03-08 00:54:12,978 basehttp "POST /contact/ HTTP/1.1" 302 0
+INFO2023-03-08 00:54:16,484 basehttp "GET /sucess/ HTTP/1.1" 200 11968
+INFO2023-03-08 00:54:28,031 basehttp "GET / HTTP/1.1" 200 29312
+INFO2023-03-08 00:54:48,311 basehttp "GET /admin HTTP/1.1" 301 0
+INFO2023-03-08 00:54:48,343 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO2023-03-08 00:54:50,545 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2428
+WARNING2023-03-08 00:55:03,614 log Not Found: /favicon.ico
+WARNING2023-03-08 00:55:03,614 basehttp "GET /favicon.ico HTTP/1.1" 404 3453
+INFO2023-03-08 00:55:14,817 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO2023-03-08 00:55:16,320 basehttp "GET /admin/ HTTP/1.1" 200 8432
+INFO2023-03-08 00:55:24,216 basehttp "GET /admin/homesite/review/ HTTP/1.1" 200 8196
+INFO2023-03-08 00:55:24,639 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO2023-03-08 00:55:58,333 basehttp "POST /admin/homesite/review/ HTTP/1.1" 200 7001
+INFO2023-03-08 00:56:01,879 basehttp "POST /admin/homesite/review/ HTTP/1.1" 302 0
+INFO2023-03-08 00:56:01,999 basehttp "GET /admin/homesite/review/ HTTP/1.1" 200 6967
+INFO2023-03-08 00:56:02,063 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO2023-03-08 00:56:11,314 basehttp "GET / HTTP/1.1" 200 26841
+INFO2023-03-08 00:56:20,952 basehttp "GET /about/ HTTP/1.1" 200 16061

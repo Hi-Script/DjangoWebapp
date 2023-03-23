@@ -30,7 +30,8 @@
                     <p class="parag">     
                         for variety of websites.
                     </p>
-                    <button type="button" class="btn btn-primary" id="btn-d" onclick="detail()">Our Services <img src="{% static 'pictures/arrow-right-up.png' %}" alt="button"></button>
+                    <button type="button" class="btn btn-primary" id="btn-d" ><a href="{% url 'contact' %}" style="color:white; 
+                    text-decoration:none;">Contact Us <img src="{% static 'pictures/arrow-right-up.png' %}" alt="button"></a></button>
                 </div>
                 
             </div>
@@ -222,6 +223,14 @@
                           
                         </div>
                 </div>
+
+                
+                    <button type="button" class="btn btn-primary" style="margin-top: -100px;" >
+                        <a href="https://github.com/Hi-Script" style="color: white; text-decoration: none;">Check Our Portofolio on GitHub</a>
+                    </button>
+            
+        
+
             </center>    
             </div>
         </div>
@@ -241,7 +250,7 @@
                 <div class="imag">
                     <img src="{% static 'pictures/plus i.png' %}" alt="">
                 </div>
-                <button type="button" class="btn btn-primary"><a href="https://wa.link/xcfhoj">Contact us<a></button>
+                <button type="button" class="btn btn-primary"><a href="{% url 'contact' %}">Contact us<a></button>
             </div>
         </div>
     </div>
@@ -256,12 +265,16 @@
                     <div class=" col-10 border-rounded  text-center" style="width:350px;padding:10px">
                     
                         {% for review in reviews  %}<br>
+                        <hr style="color:white;">
                             <article class="blog-post">
 
                                 <p style="color:white; font-size: 12px;"> {{ review.body }}</p>
 
                                 <div class="blog_profile">
-                                    <img class="rounded-circle" src="{{ review.reviewer_pic.url }}" width="120" height="115" style="margin-right:20px">
+                                    {% if review.reviewer_pic %}
+                                    <img class="rounded-circle" src="{{ review.reviewer_pic.url }}" width="100" height="100"  style="margin-right:20px;">
+                                    
+                                    {% endif %}
                                     <br><br>
                                     <h4 class="blog-post-title" style="color:white;" >{{review.name }}</h4>
                                     {% if review.job %}
@@ -306,10 +319,117 @@
 
     <!--end of review section-->
 <hr>
+<hr style="color:white;">
+
+    <center><h1 style="color: white;" >Blog Section</h1></center>   
+    <br>
+    <div class="row g-4" style="margin-left: 20px; margin-right:20px;">
+    
+        <div class="col-md-8  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" 
+         >
+            {% for blog in blogpost  %}<br>
+               
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                
+                    <div class="col-md-8">
+                    
+                        <div class="card shadow-sm">
+                            {% if blog.blog_pic %}
+
+                            <center><img src="{{ blog.blog_pic.url }}" width="295" height="200" class="blogpic"></center>
+                            
+                            {% endif %}
+                            
+                            <div class="card-body">
+                                 
+                                <h2 class="blog-post-title" style="font-family: arial; font-size: 12px; color:blue;" ><b>{{blog.category }}</b></h2>
+                                <p class="blog-post-meta"><span style="font-size:25px; color: red"><b>{{ blog.title}} </b></p>
+            
+                                <p class="card-text fs-7">{{ blog.description }}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">  <a class="art" href="{% url 'blogdetail' blog.id %}" style=" text-decoration:none;">Read More</a></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://twitter.com/HiScript_?t=R89XnWuZ8zY62L5dyeMdFg&s=09" style=" text-decoration:none;">Read on Twitter</a></button>
+                                    </div>
+                                    <small class="text-muted" style="font-size: 8px;"> {{ blog.created | timesince}} ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>    
+                <hr>
+
+            {% endfor %}
+
+            
+        
+
+            
+        </div>
+        
+
+        <div class="col-md-4" id="stick">
+        <div class="position-sticky" style="top: 2rem;">
+
+            <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="fst-italic">About HiScript Blog</h4>
+            <p class="article">We blog and post value contents, news, opportunities in Tech space. Follow us on 
+            all social media platform to enjoy more of our valuable contents.</p>
+            </div>
+
+            <div class="p-4" id="arc">
+                <h4 class="fst-italic">Our Company</h4>
+                <ol class="list-unstyled mb-0 text-white">
+                    <li><a href="{% url 'about' %}" style="color:white; text-decoration:none;">Who we are</a></li>
+                    <li><a href="{% url 'about' %}" style="color:white; text-decoration:none;">What we value</a></li>
+                    <li><a href="{% url 'review' %}" style="color:white; text-decoration:none;">Give us review</a></li>
+                    <li><a href="{% url 'about' %}" style="color:white; text-decoration:none;">About Us</a></li>
+                    
+                </ol>
+            </div>
+
+            <div class="p-4" id="else">
+                <h4 class="fst-italic ">Follow Us</h4>
+                <ol class="list-unstyled">
+                    <li><a href="https://github.com/Hi-Script" style="color:white; text-decoration:none;">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/taoheed-adeoye-0a66b5239" style="color:white; text-decoration:none;">linkedin</a></li>
+                    <li><a href="https://wa.link/xcfhoj" style="color:white; text-decoration:none;">whatsapp</a></li>
+                    <li><a href="https://twitter.com/HiScript_?t=R89XnWuZ8zY62L5dyeMdFg&s=09" style="color:white; text-decoration:none;">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100087451022468" style="color:white; text-decoration:none;">Facebook</a></li>
+                </ol>
+        </div>   
+
+
+                
+        </div> 
+
+        
+
+        
+      
+    </div>
+
+   
+    
+    
+    
+
     <div class="footer">
-        <center><footer><p class="mt-5 mb-3 text-muted">HiScript&copy; 2022–2023</p></footer></center>
+        <center><footer><p class="mt-5 mb-3 text-muted">HiScript&copy; 2022–2023</p></footer>
+        <div class="text-center" style="align-items: center;">
+            <a href="https://www.facebook.com/profile.php?id=100087451022468" target="_blank"><img src="{% static 'pictures/facebook.png' %}" height="20" width="20"></a>
+            <a href="https://wa.link/xcfhoj" target="_blank"><img src="{% static 'pictures/whatsapp.png' %}" height="20" width="20"></a>
+            <a href="https://twitter.com/HiScript_?t=R89XnWuZ8zY62L5dyeMdFg&s=09" target="_blank"><img src="{% static 'pictures/twitter.png' %}" height="20" width="20"></a>
+            <a href="https://www.linkedin.com/in/taoheed-adeoye-0a66b5239" target="_blank"><img src="{% static 'pictures/linkedin.png' %}" height="20" width="20"></a>
+        </div>
+        </center>
+        <br>
+        <br>
     
     </div>
+    
 
 
 

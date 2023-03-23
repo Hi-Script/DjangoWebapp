@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Official Homepage of HiScript{%endblock title %}
+
+
+
+{% block content %}
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+    <link rel="stylesheet" type="text/css" href="doc.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="conctact-form.js"></script>
+</head>-->
+    
+    <div class="container" style="margin-top:100px; margin-bottom: 50px">
+
+        <div class="row">
+    
+    
+    
+     
+            <div class="col-md-12" style="">
+                <div class = "reg text-center" style="margin-top:100px;">
+
+                   <center><p style="color: white">Thanks For Contacting Us, We have received your email, We will get back
+                   to you shortly.</p>
+                   
+                   <div class="btnc text-center">
+                        <button type="button" class="btn btn-primary" style="margin-top: 50px;" >
+                            <a href="{% url 'home' %}" style="color: white; text-decoration: none;">Go Back Home</a>
+                        </button>
+                    </div>
+                
+                   </center>
+                
+                    
+
+
+                    
+                        
+                </div>    
+                        
+                    
+            </div>	
+        </div>
+
+
+        
+        
+
+    <div class="a-example-divider"></div>
+
+    
+            
+        
+            
+
+
+    
+    <div class="a-example-divider"></div>
+    <footer id="b-example-divider" class=" text-center">
+        <center><footer><p class="mt-5 mb-3 text-muted">HiScript&copy; 2022–2023</p></footer>
+        <div class="text-center" style="align-items: center;">
+            <a href="https://www.facebook.com/profile.php?id=100087451022468" target="_blank"><img src="{% static 'pictures/facebook.png' %}" height="20" width="20"></a>
+            <a href="https://wa.link/xcfhoj" target="_blank"><img src="{% static 'pictures/whatsapp.png' %}" height="20" width="20"></a>
+            <a href="https://twitter.com/HiScript_?t=R89XnWuZ8zY62L5dyeMdFg&s=09" target="_blank"><img src="{% static 'pictures/twitter.png' %}" height="20" width="20"></a>
+            <a href="https://www.linkedin.com/in/taoheed-adeoye-0a66b5239" target="_blank"><img src="{% static 'pictures/linkedin.png' %}" height="20" width="20"></a>
+        </div>
+        
+        </center>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;">Privacy</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;">Terms</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;">Support</a></li>
+        </ul>
+    </footer>
+
+
+{% endblock content %}

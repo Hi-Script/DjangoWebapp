@@ -5,7 +5,7 @@
 {% block content %}
 
 <main class="form-signin text-center" style="margin-top: 100px;">
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form action="" method="POST"  enctype="multipart/form-data" class="needs-validation" novalidate >
         {% csrf_token %}
         {% if message %}
         <h2>{{ message }}</h2>
@@ -17,24 +17,33 @@
         <div class="form-floating">
 
             <input type="text" style="width: 300px; " id="floatingInput" placeholder="Your name here" name= 'name' required>
-      
+            <div class="invalid-feedback">
+                Valid FirstName is required
+            </div>
         </div><br>
 
         <div class="form-floating">
 
             <input type="text" style="width: 300px;" id="floatingInput" placeholder="Job or current Post in your company" name= 'Job' required>
-      
+            <div class="invalid-feedback">
+                Valid Post-Name is required
+            </div>
         </div><br>
 
         <div class="form-floating">
             <textarea name="description"  cols="37" rows="8" placeholder="Your review here" required></textarea><br>
              
-
+            <div class="invalid-feedback">
+                Valid reviews is required
+            </div>
 
         </div>
         <div class= "pics">
             <label style="color: white;">Upload Your image</label><br><br>
-            <input type="file" name ="image" class="form-control-file" style="color: white;">
+            <input type="file" name ="image" class="form-control-file" style="color: white;" required>
+            <div class="invalid-feedback">
+                Valid image is required
+            </div>
         </div><br>
         
         <button class=" btn btn-primary" type="submit" onclick="" id="create">Click to Review</button>

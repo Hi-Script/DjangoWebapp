@@ -24,16 +24,16 @@ load_dotenv()
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4(&l53j7*l3nm*ab9%*7a^q416@$dj@%n2gnlemk)5%zg!3*11'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "realhiscript.fly.dev"]
+ALLOWED_HOSTS = [ '*']
 #CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS')
 #ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://realhiscript.fly.dev']
+CSRF_TRUSTED_ORIGINS = ['https://hi-script.fly.dev']
 
 
 # Application definition
@@ -47,13 +47,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'homesite.apps.HomesiteConfig',
     'storages',
+    
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     #"whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
+    #'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
+    #'django.middleware.cache.FetchFromCacheMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -85,14 +88,15 @@ WSGI_APPLICATION = 'hiscript.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-'''
+
 DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'))
-}'''
+}
 
-#DATABASES = {
- #   'default': dj_database_url.parse(os.getenv('DATABASE_URL', default="sqlite:///db.sqlite3"))
-#}
+'''
+DATABASES = {
+    'default': dj_database_url.parse(os.getenv('DATABASE_URL', default="sqlite:///db.sqlite3"))
+}
 
 DATABASES = {
     'default': {
@@ -100,7 +104,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-'''
+
+
 DATABASES = {
     "default": dj_database_url.config(
         default="sqlite:///" + os.path.join(BASE_DIR, "db.sqlite3")
@@ -138,42 +143,46 @@ USE_I18N = True
 USE_TZ = True
 
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-
-#STATIC_URL = 'static/'
+''''
+STATIC_URL = 'static/'
 #STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-#STATIC_ROOT = BASE_DIR / "staticfiles"
-#STATICFILES_DIRS =[BASE_DIR / 'static']
-#STATICFILES_DIRS =(
- #   os.path.join(BASE_DIR, 'static'),
-#)
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS =[BASE_DIR / 'static']
+STATICFILES_DIRS =(
+   os.path.join(BASE_DIR, 'static'),
+)
 
 
-#MEDIA_URL = 'media/'
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-
+'''
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
 #USE_S3 = os.getenv('USE_S3') == 'TRUE'
 
+#AWS settings
+#if USE_S3:
 
 
 AWS_LOCATION = 'static'
 AWS_ACCESS_KEY_ID =os.getenv('AWS_ACCESS_KEY_ID') 
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME ='mysitehome'
+AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_BUCKET_NAME')
 AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = { 'CacheControl': 'max-age=86400'}
 AWS_QUERYSTRING_AUTH = False
 DEFAULT_FILE_STORAGE = 'hiscript.storage_backends.MediaStore'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'hiscript.storage_backends.StaticStorage'
 STATICFILES_DIRS = [
 os.path.join(BASE_DIR, 'static'),
 ] 
@@ -186,19 +195,81 @@ MEDIAFILES_LOCATION = 'media'
 MEDIA_ROOT = '/%s/' % MEDIAFILES_LOCATION
 MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 '''
 else:
-    STATIC_URL = '/static/'
-    PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT  = os.path.join(PROJECT_ROOT, 'staticfiles')
-    
-
+    STATIC_URL = 'static/'
     MEDIA_URL = 'media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-#STATICFILES_DIRS =[BASE_DIR / 'static']
+    STATICFILES_DIRS =[BASE_DIR / 'static']
+    STATIC_ROOT = BASE_DIR / "staticfiles"
     STATICFILES_DIRS =(
         os.path.join(BASE_DIR, 'static'),
     )
-#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+'''
+#Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'officialhiscript@gmail.com'
+EMAIL_HOST_PASSWORD = os.getenv('GMAIL_SMTP')
+EMAIL_PORT = 587
+#EMAIL_TIMEOUT= 120
+EMAIL_USE_TLS = True
+
+#caching settings
+'''
+CACHES = {'default': {
+            'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'}}
+#CACHE_MIDDLEWARE_ALIAS = 'default'  # which cache alias to use
+#CACHE_MIDDLEWARE_SECONDS = 1600   # number of seconds to cache a page for (TTL)
+#CACHE_MIDDLEWARE_KEY_PREFIX = ''
+'''
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': 'C:/Users/hp250/myhiscript/hiscript/hiscript_cache',
+    }
+}
+#Data upload Settings
+DATA_UPLOAD_MAX_MEMORY_SIZE=30021440  
+DATA_UPLOAD_MAX_NUMBER_FILES= 1000
+DATA_UPLOAD_MAX_NUMBER_FIELDS=10000
+
+#HTTPS SETTINGS
+#SESSION_COOKIE_SECURE= True
+#CSRF_COOKIE_SECURE= True
+#SECURE_SSL_REDIRECT= True
+
+#HSTS SETTINGS
+#SECURE_HSTS_SECONDS= 31536000 # 1 year
+#SECURE_HSTS_PRELOAD= True
+#SECURE_HSTS_INCLUDE_SUBDOMAINS= True
+
+'''
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simpler': {
+            'format': '{levelname}{asctime} {module} {message}',
+            'style': '{',          
+        }
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': './logs/hiscript.log',
+            'formatter': 'simpler',
+        },
+    },
+    'loggers': {
+        'django':{
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True
+        }
+        
+    },
+}
 '''
